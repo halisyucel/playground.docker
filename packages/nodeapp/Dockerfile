@@ -1,5 +1,7 @@
 FROM node:14-alpine
 
+WORKDIR /usr/app
+
 COPY packages/nodeapp/package.json ./
 COPY yarn.lock ./
 
